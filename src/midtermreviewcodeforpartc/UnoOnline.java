@@ -6,6 +6,8 @@
 package midtermreviewcodeforpartc;
 
 import java.util.Scanner;
+import static midtermreviewcodeforpartc.PasswordValidator.MIN_PASS_LENGTH;
+import static midtermreviewcodeforpartc.PasswordValidator.MIN_SPEC_CHAR;
 
 /**
  * The signIn page for UnoOnline.
@@ -47,8 +49,10 @@ public class UnoOnline
         String password="";
         while(!validPassword)
         {
-            System.out.println("Passwords must have at least 8 characters");
-            System.out.println("Passwords must have at least one special character");
+            System.out.println("Passwords must have at least " 
+                    + MIN_PASS_LENGTH +" characters");
+            System.out.println("Passwords must have at least "
+                    + MIN_SPEC_CHAR + " special character");
             System.out.println("Please enter your desired password:"); 
             
             password = sc.nextLine();
