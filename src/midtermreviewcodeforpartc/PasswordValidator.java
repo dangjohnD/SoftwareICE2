@@ -12,7 +12,6 @@ public class PasswordValidator {
     public static final int MIN_PASS_LENGTH = 8;
     public static final int MIN_SPEC_CHAR = 1;
     public static boolean validatePassword(String password){
-        System.out.println("Gamer");
         int specialCharCount = 0;
         //iterate over each character to see if it is a special character
         for(int i=0;i<password.length(); i++)
